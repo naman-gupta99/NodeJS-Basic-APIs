@@ -27,7 +27,7 @@ const Item = require('./item');
 //App GET route
 app.get('/display', (req, res) => {
   Item.find()
-    .sort({date: -1})
+    .sort({data: -1})
     .then(items => res.json(items));
 });
 
